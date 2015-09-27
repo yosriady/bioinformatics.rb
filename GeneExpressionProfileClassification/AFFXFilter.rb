@@ -5,7 +5,7 @@ require 'pry'
 input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt'
 output_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt-affx-cleaned'
 
-def filter_control_gene(input, output)
+def filter(input, output)
   line_num = 1
   File.open(output, 'w') do |output| # 'w' for a new file, 'a' append to existing
     File.open(input, 'r').each do |line|
@@ -20,14 +20,14 @@ def filter_control_gene(input, output)
   end
 end
 
-def filter_control_genes(input_dir, output_dir)
+def enumerate(input_dir, output_dir)
   Dir.foreach(input_dir) do |item|
     next unless item.end_with? '.TXT'
     input = "#{input_dir}/#{item}"
     output = "#{output_dir}/#{item}"
-    filter_control_gene(input, output)
+    filter(input, output)
   end
 end
 
-filter_control_genes(input_dir, output_dir)
+enumerate(input_dir, output_dir)
 p 'Done!'
