@@ -3,8 +3,8 @@ require 'csv'
 
 # Given a directory of .txt samples, should filter out samples with A and M Abs Call
 
-input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt-affx-cleaned'
-output_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt-AMabscall-cleaned'
+input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset-txt-affx-cleaned'
+output_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset-txt-AMabscall-cleaned'
 
 def filter(input, output)
   line_num = 1
