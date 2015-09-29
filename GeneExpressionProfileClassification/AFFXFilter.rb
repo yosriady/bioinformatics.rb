@@ -2,8 +2,8 @@ require 'pry'
 
 # Given a directory of .txt samples, should filters out AFFX control genes from all samples
 
-input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt'
-output_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt-affx-cleaned'
+input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset-txt'
+output_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset-txt-affx-cleaned'
 
 def filter(input, output)
   line_num = 1

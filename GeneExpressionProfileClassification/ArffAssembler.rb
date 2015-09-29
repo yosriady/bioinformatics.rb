@@ -1,9 +1,9 @@
 require 'csv'
 require 'pry'
 
-input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset-txt-fully-cleaned'
-annotations_filepath = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testset10-02-01annotation.csv'
-output_filepath = '/Users/yosriady/Downloads/Assignment2-GeneExpression/testing/testing.arff'
+input_dir = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset-txt-normalized-with-testset'
+annotations_filepath = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/trainset10-02-01annotation.csv'
+output_filepath = '/Users/yosriady/Downloads/Assignment2-GeneExpression/training/training.arff'
 
 def load_annotations(filepath)
   c = {}
